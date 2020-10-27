@@ -1,10 +1,9 @@
-
 class Rocket {
 
-   id_: string;
-   prop_: number;
+  id_: string;
+  prop_: number;
 
-  constructor(id: string, propulsores: number) {
+ constructor(id: string, propulsores: number) {
 
     this.id_ = id;
 
@@ -12,18 +11,18 @@ class Rocket {
 
 
   }
-  public getId(): string {
+ public get  getId(): string {
     return this.id_;
   }
-  public getPropu(): number {
+ public get getPropu(): number {
     return this.prop_;
   }
 
-  setId(id: string) {
+ public set  setId(id: string) {
     this.id_ = id;
 
   }
-  setPropulsores(propulsores: number) {
+ public set setPropulsores(propulsores: number) {
     this.prop_ = propulsores;
   }
 

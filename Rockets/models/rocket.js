@@ -4,17 +4,33 @@ var Rocket = /** @class */ (function () {
         this.id_ = id;
         this.prop_ = propulsores;
     }
-    Rocket.prototype.getId = function () {
-        return this.id_;
-    };
-    Rocket.prototype.getPropu = function () {
-        return this.prop_;
-    };
-    Rocket.prototype.setId = function (id) {
-        this.id_ = id;
-    };
-    Rocket.prototype.setPropulsores = function (propulsores) {
-        this.prop_ = propulsores;
-    };
+    Object.defineProperty(Rocket.prototype, "getId", {
+        get: function () {
+            return this.id_;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Rocket.prototype, "getPropu", {
+        get: function () {
+            return this.prop_;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Rocket.prototype, "setId", {
+        set: function (id) {
+            this.id_ = id;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    Object.defineProperty(Rocket.prototype, "setPropulsores", {
+        set: function (propulsores) {
+            this.prop_ = propulsores;
+        },
+        enumerable: false,
+        configurable: true
+    });
     return Rocket;
 }());
