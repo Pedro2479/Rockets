@@ -7,13 +7,10 @@ var Rocket = /** @class */ (function () {
         this.acelerar = acelerar;
     }
     Rocket.prototype.acelerarRocket = function (potencia) {
-        var valActual = 0;
-        for (var i = 0; i <= potencia.length; i++) {
-            this.acelerar += potencia[i];
-            valActual = this.acelerar + 10;
-            valActual++;
-            return valActual;
+        for (var i = 0; i < potencia.length; i++) {
+            this.acelerar += potencia[i] + 10;
         }
+        return this.acelerar;
     };
     return Rocket;
 }());

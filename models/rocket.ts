@@ -16,15 +16,14 @@ class Rocket {
 
 
   acelerarRocket(potencia: number[]) {
-  let valActual=0;
-    for (let i = 0; i <=potencia.length; i++) {
 
-      this.acelerar += potencia[i];
+    for (let i = 0; i <potencia.length; i++) {
 
-  valActual=this.acelerar+10;
-  valActual++
-  return valActual;
-}
+      this.acelerar += potencia[i]+10;
+
+  
  
+}
+return this.acelerar;
  
 }}
